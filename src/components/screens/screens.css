@@ -1,0 +1,41 @@
+/* Common screen styles */
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: #0D1117;
+}
+
+.screen-content {
+  flex: 1;
+  padding-top: 60px;
+}
+
+.screen-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.screen-subtitle {
+  font-size: 15px;
+  color: #8191A2;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.screen-footer {
+  padding-top: 16px;
+  padding-bottom: 100px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.button-group > * {
+  flex: 1;
+}

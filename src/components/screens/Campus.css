@@ -1,0 +1,102 @@
+.campus-screen .screen-content {
+  flex: 1;
+}
+
+.campus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.campus-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.campus-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.campus-card.selected {
+  border-color: #44EB99;
+  background: rgba(68, 235, 153, 0.1);
+}
+
+.campus-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.campus-radio {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #5A6B7D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.campus-card.selected .campus-radio {
+  border-color: #44EB99;
+}
+
+.radio-dot {
+  width: 12px;
+  height: 12px;
+  background: #44EB99;
+  border-radius: 50%;
+}
+
+.campus-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.campus-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.campus-location {
+  font-size: 13px;
+  color: #8191A2;
+}
+
+.campus-info-btn {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campus-info-btn svg {
+  color: #8191A2;
+}
+
+.campus-info-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.campus-info-btn:hover svg {
+  color: #44EB99;
+}

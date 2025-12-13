@@ -1,0 +1,88 @@
+.id-screen .screen-content {
+  flex: 1;
+}
+
+.method-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.method-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.method-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.method-card.selected {
+  border-color: #44EB99;
+  background: rgba(68, 235, 153, 0.1);
+}
+
+.method-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(68, 235, 153, 0.15) 0%, rgba(134, 27, 227, 0.15) 100%);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.method-icon-wrapper svg {
+  color: #44EB99;
+}
+
+.method-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.method-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.method-desc {
+  font-size: 13px;
+  color: #8191A2;
+}
+
+.method-radio {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #5A6B7D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.method-card.selected .method-radio {
+  border-color: #44EB99;
+}
+
+.radio-dot {
+  width: 12px;
+  height: 12px;
+  background: #44EB99;
+  border-radius: 50%;
+}

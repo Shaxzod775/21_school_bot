@@ -1,0 +1,13 @@
+.email-screen .screen-content {
+  flex: 1;
+}
+
+.email-input-wrapper {
+  margin-top: 8px;
+}
+
+.email-hint {
+  font-size: 13px;
+  color: #5A6B7D;
+  margin-top: 8px;
+}

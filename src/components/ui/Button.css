@@ -1,0 +1,107 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 24px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+/* Variants */
+.btn-primary {
+  background: linear-gradient(135deg, #44EB99 0%, #3DD889 100%);
+  color: #0D1117;
+  box-shadow: 0 4px 20px rgba(68, 235, 153, 0.4);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(68, 235, 153, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #44EB99;
+  border: 2px solid #44EB99;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(68, 235, 153, 0.1);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #8191A2;
+  padding: 12px 16px;
+}
+
+.btn-ghost:hover {
+  color: #FFFFFF;
+}
+
+.btn-danger {
+  color: #FF4A50;
+}
+
+.btn-danger-outline {
+  background: transparent;
+  color: #FF4A50;
+  border: 2px solid #FF4A50;
+}
+
+.btn-danger-outline:hover:not(:disabled) {
+  background: rgba(255, 74, 80, 0.1);
+}
+
+/* Sizes */
+.btn-sm {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  padding: 18px 32px;
+  font-size: 18px;
+}
+
+/* Pulse animation */
+.btn.pulse {
+  animation: buttonPulse 2s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(68, 235, 153, 0.4); }
+  50% { box-shadow: 0 4px 30px rgba(68, 235, 153, 0.6); }
+}
+
+/* Loading spinner */
+.btn-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,10 @@
+.name-screen .screen-content {
+  flex: 1;
+}
+
+.name-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}

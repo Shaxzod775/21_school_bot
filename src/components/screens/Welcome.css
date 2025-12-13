@@ -1,0 +1,130 @@
+.welcome-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  background: linear-gradient(180deg, #0D1117 0%, #161D27 100%);
+}
+
+.welcome-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.welcome-logo {
+  margin-bottom: 32px;
+}
+
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #44EB99 0%, #861BE3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(68, 235, 153, 0.3);
+}
+
+.logo-circle span {
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.welcome-subtitle {
+  font-size: 16px;
+  color: #8191A2;
+  max-width: 300px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.welcome-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 24px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 16px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-item-full {
+  grid-column: 1 / -1;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.feature-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.3;
+}
+
+.feature-desc {
+  font-size: 11px;
+  color: #8191A2;
+  line-height: 1.4;
+}
+
+.feature-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(68, 235, 153, 0.15) 0%, rgba(134, 27, 227, 0.15) 100%);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.feature-icon-wrapper svg {
+  color: #44EB99;
+  stroke: #44EB99;
+}
+
+.welcome-footer {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+.welcome-note {
+  text-align: center;
+  font-size: 13px;
+  color: #5A6B7D;
+  margin-top: 12px;
+}

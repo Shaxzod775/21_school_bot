@@ -1,0 +1,83 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8191A2;
+  margin-bottom: 8px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #516071;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #44EB99;
+  box-shadow: 0 0 0 4px rgba(68, 235, 153, 0.15);
+}
+
+.form-input.error {
+  border-color: #FF4A50;
+}
+
+.form-input.success {
+  border-color: #44EB99;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.form-input.with-icon {
+  padding-left: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.form-hint {
+  display: block;
+  font-size: 12px;
+  color: #516071;
+  margin-top: 6px;
+}
+
+.form-error {
+  display: block;
+  font-size: 12px;
+  color: #FF4A50;
+  margin-top: 6px;
+}

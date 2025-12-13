@@ -1,0 +1,13 @@
+.phone-screen .screen-content {
+  flex: 1;
+}
+
+.phone-input-wrapper {
+  margin-top: 8px;
+}
+
+.phone-hint {
+  font-size: 13px;
+  color: #5A6B7D;
+  margin-top: 8px;
+}
